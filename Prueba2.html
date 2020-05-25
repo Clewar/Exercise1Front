@@ -9,42 +9,84 @@
     <title>Incoret</title>
 </head>
 
-<body>
+<body class="body">
     <div id="app">
-        <div class="nav-bar">
-            <div class="nav-bar-left">
-                <img v-bind:src="logo" class="logoC">
-                <div class="nav-bar-Title">{{ empresa }}</div>
+        <nav class="nav-container">
+            <div class="nav-bar">
+                <div class="nav-bar-left">
+                    <img v-bind:src="logo" class="logoC">
+                    <div class="nav-bar-Title">{{ empresa }}</div>
+                </div>
+    
+                <div class="nav-bar-links">
+                    <a href="" class="v-btn">
+                        <div class="v-btn-content">INICIO</div>
+                    </a>
+    
+                    <a href="" class="v-btn">
+                        <div class="v-btn-content">SECCIÓN TÉCNICA</div>
+                    </a>
+    
+                    <a href="" class="v-btn">
+                        <div class="v-btn-content">SERVICIOS</div>
+                    </a>
+    
+                    <a href="" class="v-btn">
+                        <div class="v-btn-content">BOLSA DE TRABAJO</div>
+                    </a>
+    
+                    <a href="" class="v-btn">
+                        <div class="v-btn-content">CONTACTO</div>
+                    </a>
+    
+                </div>
+    
             </div>
+        </nav>
 
-            <div class="nav-bar-links">
-                <a href="" class="v-btn">
-                    <div class="v-btn-content">INICIO</div>
-                </a>
+        <!--section 1 -->
+        <div class="welcome-incoret">
+                <div class="welcome-incoret-container">
+                    <div class="welcome-incoret-container-inside">
+                        <div class="welcome-incoret-container-inside-text">
+                            <hr class="welcome-incoret-container-inside-text-line1">
+                            <div class="welcome-incoret-container-inside-text-incoret">
+                                INCORET
+                            </div>
+                            <hr class="welcome-incoret-container-inside-text-line2">
+                            <div class="welcome-incoret-container-inside-text-des">
+                                INSTALACIÓN CORPORATIVA 
+                                <br>
+                                DE REDES Y TELEFONÍA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img v-bind:src="welcomeSquares" class="welcome-squares">
+        </div>
+        <!-- end section 1 --> 
 
-                <a href="" class="v-btn">
-                    <div class="v-btn-content">SECCIÓN TÉCNICA</div>
-                </a>
+        <div class="team-incoret-section">
+                <div class="team-incoret-section-container">
+                    <div class="team-incoret-section-container-inside">
+                        <div class="team-incoret-section-container-inside-in">
+                            <div class="team-incoret-section-container-inside-in-us">
+                                NOSOTROS
+                            </div>
+                            <hr class="team-incoret-container-inside-in-line">
+                            <div class="team-incoret-section-container-inside-in-us-des">
+                                <p class="team-incoret-section-container-inside-in-us-des-p1">
+                                    Contamos con 11 años de experiencia en el negocio de las telecomunicaciones, ofreciendo dentro de un marco profesional y ético, el soporte en la entrega de servicios con calidad al usuario final.
+                                </p>
+                                <p class="team-incoret-section-container-inside-in-us-des-p1">
+                                    Estamos enfocados a ser su aliado, para poder alcanzar con garantías, los grandes retos que el mercado de las telecomunicaciones exige.
+                                </p>
 
-                <a href="" class="v-btn">
-                    <div class="v-btn-content">SERVICIOS</div>
-                </a>
-
-                <a href="" class="v-btn">
-                    <div class="v-btn-content">BOLSA DE TRABAJO</div>
-                </a>
-
-                <a href="" class="v-btn">
-                    <div class="v-btn-content">CONTACTO</div>
-                </a>
-
-            </div>
-
-        </div>fasdf
-
-        
-        <div class="body1">
-                /* Feliz dia del estudiante <3 */
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img v-bind:src="teamSquares" class="team-squares">
         </div>
     </div>
 
