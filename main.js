@@ -7,3 +7,4 @@ var app = new Vue({
         teamSquares: "MediaIncoret/teamSquares.png",
     }
 })
+
