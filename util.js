@@ -16,11 +16,9 @@ window.addEventListener('scroll', function (event) {
         // Animar
         document.getElementById("us").style.animationName = "enter-title";
         document.getElementById("us").style.animationDuration = "3s";
-        document.getElementById("us").style.animationIterationCount = "1";
         this.document.getElementById("us").style.opacity = "1";
         document.getElementById("usline").style.animationName = "enter-right";
         document.getElementById("usline").style.animationDuration = "1s";
-        document.getElementById("usline").style.animationIterationCount = "1";
     }
 });
 
@@ -28,5 +26,36 @@ window.addEventListener('scroll', function (event) {
     if (window.scrollY > 30) {
         //console.log("ya")
         // Animar
+        this.document.getElementById("navbar").style.backgroundColor = "DarkSlateBlue"; 
+    }
+    else{
+        this.document.getElementById("navbar").style.backgroundColor = "transparent"; 
     }
 });
+
+function sideCover() {
+    var myEle = document.getElementById("cover");
+    if(myEle!=null){
+        document.getElementById('cover').style.display = "block"
+        document.getElementById('sidebar').style.display = "block"
+    }
+    else{
+        var sideDiv = document.createElement("BUTTON");
+        sideDiv.setAttribute('id', 'cover')
+        sideDiv.setAttribute('class', 'side-cover')
+        sideDiv.setAttribute('onclick', 'hideSideCover()')
+        document.body.appendChild(sideDiv)
+
+        var sidebar = document.createElement("ASIDE");
+        sidebar.setAttribute('id', 'sidebar')
+        sidebar.setAttribute('class', 'navigation-drawer')
+        document.body.appendChild(sidebar)
+        sidebar.innerHTML = "<div>hola</div>"
+        
+    } 
+}
+
+function hideSideCover() {
+    document.getElementById('cover').style.display = "none"
+    document.getElementById('sidebar').style.display = "none"
+  }
